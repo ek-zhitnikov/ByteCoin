@@ -62,15 +62,39 @@
 			children = (
 				55E8507229FAB5CC002754CF /* AppDelegate.swift */,
 				55E8507429FAB5CC002754CF /* SceneDelegate.swift */,
-				55E8507629FAB5CC002754CF /* ViewController.swift */,
-				55E8507829FAB5CC002754CF /* Main.storyboard */,
+				55E8508B29FABE58002754CF /* Model */,
+				55E8508A29FABE4C002754CF /* View */,
+				55E8508C29FABE76002754CF /* Controller */,
 				55E8507B29FAB5D5002754CF /* Assets.xcassets */,
 				55E8507D29FAB5D5002754CF /* LaunchScreen.storyboard */,
 				55E8508029FAB5D5002754CF /* Info.plist */,
+			);
+			path = ByteCoin;
+			sourceTree = "<group>";
+		};
+		55E8508A29FABE4C002754CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55E8507829FAB5CC002754CF /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55E8508B29FABE58002754CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				55E8508629FABB25002754CF /* CoinManager.swift */,
 				55E8508829FABDC9002754CF /* CoinData.swift */,
 			);
-			path = ByteCoin;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55E8508C29FABE76002754CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				55E8507629FAB5CC002754CF /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
