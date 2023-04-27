@@ -29,7 +29,6 @@ struct CoinManager {
         
         // Формируем URL-строку для запроса к API
         let urlString = "\(baseURL)/\(currency)?apikey=\(apiKey)"
-        print(urlString)
         
         // Если URL корректен, то создаем сессию URLSession и начинаем выполнение задачи dataTask
         if let url = URL(string: urlString) {
@@ -62,7 +61,6 @@ struct CoinManager {
         do {
             let decodedData = try decoder.decode(CoinData.self, from: data)
             let lastPrice = decodedData.rate
-            print(lastPrice)
             return lastPrice
             
             // Если при обработке данных произошла ошибка, то вызываем метод didFailWithError делегата
